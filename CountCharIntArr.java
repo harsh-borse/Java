@@ -15,7 +15,8 @@ public class CountCharIntArr {
         int numbers = 0;
         int others = 0;
 
-        for (char ch : arr) {
+        for (int i = 0; i < arr.length; i++) {
+        char ch = arr[i];
 
             if (Character.isLetter(ch)) {
                 letters++;
