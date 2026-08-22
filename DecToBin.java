@@ -10,9 +10,10 @@ public class DecToBin{
         String binary = "";
         while(num > 0){
             int remainder = num % 2;
-            binary = binary + remainder;
+            binary = remainder + binary;
             num = num / 2;
         }
+        
         System.out.println("Binary representation: " + binary);
     }
 }
